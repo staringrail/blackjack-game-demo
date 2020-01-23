@@ -2,17 +2,27 @@
 <html>
 
   <head>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   </head>
 
   <body>
     <h1 id="title">Black Jack Game</h1>
-    <h3>By: railgun1v9</h3>
-    <p id="text-area">This is some text...</p>
+    <h3>By: Pow</h3>
+    <div>
+      <h4 id="player-wins" style="display: inline; color: blue;">0</h4>
+      <h4 style="display: inline;">-</h4>
+      <h4 id="dealer-wins" style="display:inline; color: red;">0</h4>
+    </div>
+    <p id="text-area">Welcome to Black Jack.</p>
     <p id="dealer-text-area"></p>
+    <div id="dealer-score"></div>
+    <p id="player-text-area"></p>
+    <div id="player-score"></div>
     <button id="new-game-button">New Game</button>
     <button id="hit-button">Hit</button>
     <button id="stay-button">Stay</button>
+    <div id="game-text"></div>
     
     <script src="index.js"></script>
   </body>
